@@ -1,0 +1,125 @@
+.loader,
+.page-status {
+    width: 100%;
+}
+
+.filter-chips {
+    position: fixed;
+    top: 4.3rem;
+    width: 100%;
+    background-color: var(--primary-color);
+    border-bottom: 1px solid var(--black-900);
+    white-space: nowrap;
+}
+
+.filter-chips button {
+    font-size: 1rem;
+    padding: 6px .8rem;
+    border: 1px solid var(--secondary-color);
+    border-radius: 1.2rem;
+    margin: .5rem;
+}
+
+.filter-chips-btn {
+    background-color: var(--secondary-color);
+    color: var(--white);
+    border: 2px solid var(--secondary-color);
+}
+
+.item-container {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    margin: 1rem;
+}
+
+.explore-item {
+    margin-top: 3.5rem;
+}
+
+.logo-title p {
+    font-size: 1rem;
+}
+
+.channel-creator p,
+.channel-creator section span {
+    font-size: .8rem;
+}
+
+.more-option-model {
+    background-color: var(--primary-color);
+    box-shadow: 2px 2px 5px var(--gray-900);
+    width: fit-content;
+    padding: 5px 5px;
+    right: .6rem;
+    top: 77%;
+}
+
+.more-feature-icon-model {
+    right: 0%;
+    top: 70%;
+    visibility: hidden;
+}
+
+.item-section:hover .more-feature-icon-model {
+    visibility: inherit;
+}
+
+@media screen and (max-width: 1370px) {
+    .item-container {
+        grid-template-columns: repeat(4, 1fr);
+    }
+}
+
+@media screen and (max-width: 1120px) {
+    .item-container {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+@media screen and (max-width: 900px) {
+    .filter-chips {
+        top: 7rem;
+        overflow: auto;
+    }
+
+    .item-container {
+        grid-template-columns: repeat(2, 1fr);
+        margin-bottom: 4rem;
+    }
+
+    .logo-title p {
+        font-size: 1rem;
+    }
+
+    .channel-creator p,
+    .channel-creator section span {
+        font-size: .9rem;
+    }
+
+    .more-feature-icon-model {
+        visibility: inherit;
+    }
+
+    .delete-icon {
+        top: 75%;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .item-container {
+        grid-template-columns: 1fr;
+    }
+
+    .card-image img {
+        height: 30vh;
+    }
+
+    .toast-container {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: flex-end;
+        width: 95% !important;
+        height: 20vh !important;
+    }
+}

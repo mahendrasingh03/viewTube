@@ -1,0 +1,28 @@
+.video-section{
+    grid-template-columns: repeat(4, 1fr);
+}
+
+.playlist-children{
+    height: 10rem;
+    width: 13rem;
+}
+
+.playlist-item{
+    height: fit-content;
+    background-color: rgb(66, 54, 54);
+    border: 4px solid var(--secondary-color);
+}
+
+.color{
+    color: var(--orange-900);
+    font-size: 1.5rem;
+}
+
+.delete-icon {
+    position: absolute;
+    font-size: 1.3rem;
+    right: 0%;
+    top: 30%;
+    border: none;
+    background-color: inherit;
+}
